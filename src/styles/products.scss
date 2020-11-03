@@ -1,0 +1,92 @@
+$color-primary: seagreen;
+
+.products-list {
+  width: 60%;
+}
+
+.product {
+  width: 100%;
+  margin: 30px 50px;
+  border: 2px solid $color-primary;
+  border-radius: 10px;
+  text-align: center;
+.product-name-and-button{
+  display: flex;
+  button{
+    width:25px;
+    height:25px;
+    border:2px solid $color-primary;
+    border-radius: 10px;
+    margin:5px 5px;
+    color: $color-primary;
+    &:active {
+      outline: 0;
+    }
+  }
+}
+  .product-name {
+    font-family: 'Fredericka the Great', cursive;
+    font-size: 1.5rem;
+    margin: 20px auto;
+  }
+
+  .product-data {
+    width: 30%;
+    display: flex;
+    justify-content: space-between;
+    font-weight: bold;
+    margin: 0 auto;
+    font-family: 'Syne Mono', monospace;
+  }
+
+  .product-buttons {
+    margin-left: 250px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    button {
+      background-color: $color-primary;
+      color: white;
+      border: none;
+      border-radius: 5px;
+      font-family: 'Syne Mono', monospace;
+      font-size: 1rem;
+    }
+    .add-to-cart-btns {
+      display: flex;
+      width: 150px;
+      button {
+        width: 30px;
+        height:30px;
+        margin-right: 5px;
+      }
+      .cart-icon {
+        color: $color-primary;
+        margin-right: 5px;
+        font-size: 30px;
+      }
+    }
+    .more-info-btn {
+      width: 150px;
+      padding: 5px 10px;
+      margin-left: 100px;
+      margin-bottom: 20px;
+      margin-top: 20px;
+    }
+  }
+
+  .description {
+    margin: auto 20px;
+    font-family: 'Syne Mono', monospace;
+  }
+}
+
+.product-name::before,
+.product-name::after {
+  display: inline-block;
+  content: "";
+  border-top: .3rem solid $color-primary;
+  width: 4rem;
+  margin: 5px 1rem;
+
+}

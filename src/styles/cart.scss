@@ -1,0 +1,29 @@
+$color-primary: seagreen;
+
+.cart {
+  width: 25%;
+  height: 250px;
+  border: 2px solid $color-primary;
+  border-radius: 10px;
+  margin-top: 100px;
+  font-family: 'Syne Mono', monospace;
+
+}
+
+.cart-content {
+  height: 80%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  margin: 20px 20px;
+  button{
+    background-color: $color-primary;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-family: 'Syne Mono', monospace;
+    font-size: 1rem;
+  }
+}
+
+
